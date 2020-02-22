@@ -6,6 +6,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 50px;
 }
 
 .title {
@@ -62,9 +63,11 @@ h1 {
   cursor: pointer;
 }
 
-.quote {
-  /* height: 400px;
-  width: 400px; */
+.quote-container {
+  height: 500px;
+  width: 400px;
+  margin-top: 100px;
+  position: relative;
 }
 
 .quote-background {
@@ -84,19 +87,48 @@ h1 {
   margin: none;
   padding: 2px;
   transform: rotate(180deg);
-
+  line-height: .5;
 }
 
 #two {
   text-align: right;
   margin: none;
   padding: 2px;
+  padding: 2px;
 }
 
-/* p {
-  font-family: 'Alex Brush';
-  font-size: 10px;
-  color: purple;
-  color: rgba(255, 255, 255, 0.1);
+.quote {
+  height: 400px;
+  width: 400px;
   line-height: 0;
-} */
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  position: absolute;
+  top: 65px;
+}
+
+.random-quote {
+  font-family: 'Rock Salt';
+  font-size: 24px;
+  color: white;
+  margin: 200px auto;
+  text-align: center;
+}
+
+.quote-button {
+  height: 150px;
+  margin: 10px auto;
+}
+
+button {
+  height: 100px;
+  width: 200px;
+  font-family: 'Rock Salt';
+  font-size: 18px;
+  color: black;
+  background-color: red;
+  border-radius: 5%;
+  border: black;
+  line-height: 1.5;
+  text-align: center;
+  cursor: pointer;
+}
