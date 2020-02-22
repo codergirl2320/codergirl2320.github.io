@@ -59,8 +59,44 @@ h1 {
   padding: 10px;
   border-radius: 50%;
   text-align: center;
-}
-
-.carousel-button {
   cursor: pointer;
 }
+
+.quote {
+  /* height: 400px;
+  width: 400px; */
+}
+
+.quote-background {
+  height: 200px;
+  width: 400px;
+}
+
+#one, #two {
+  font-family: 'Alex Brush';
+  font-size: 1200px;
+  color: rgba(255, 255, 255, 0.1);
+  line-height: .7;
+}
+
+#one {
+  text-align: right;
+  margin: none;
+  padding: 2px;
+  transform: rotate(180deg);
+
+}
+
+#two {
+  text-align: right;
+  margin: none;
+  padding: 2px;
+}
+
+/* p {
+  font-family: 'Alex Brush';
+  font-size: 10px;
+  color: purple;
+  color: rgba(255, 255, 255, 0.1);
+  line-height: 0;
+} */
