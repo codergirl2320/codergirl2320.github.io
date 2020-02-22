@@ -114,21 +114,31 @@ h1 {
   text-align: center;
 }
 
-.quote-button {
+.quote-button-container {
   height: 150px;
   margin: 10px auto;
 }
 
-button {
+.button {
   height: 100px;
   width: 200px;
-  font-family: 'Rock Salt';
-  font-size: 18px;
-  color: black;
   background-color: red;
   border-radius: 5%;
   border: black;
   line-height: 1.5;
-  text-align: center;
   cursor: pointer;
+}
+
+.quote-button:hover {
+  cursor: pointer;
+  background: white;
+  color: red;
+}
+
+.button-text {
+  font-family: 'Rock Salt';
+  font-size: 18px;
+  color: black;
+  /* padding-top: 35px; */
+  text-align: center;
 }
