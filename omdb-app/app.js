@@ -39,10 +39,10 @@ const randNum = () => {
 }
 
 const quotes = ['Come out to the coast, we’ll get together, have a few laughs…',
-                'Just a fly in the ointment, Hans. A monkey in the wrench.',
+                'Just a fly in the ointment, Hans...a monkey in the wrench.',
                 'Welcome to the party, Pal!',
                 'Yippie Ki Yay, M*th*rf*ck*r!',
-                'Nine million terrorists in the world and I gotta kill one with feet smaller than my sister.',
+                'Nine million terrorists in the world and I gotta kill one with feet smaller than my sister...',
                 'No f*cking sh*t lady, does it sound like I\'m ordering a pizza?',
                 'Happy trails, Hans!']
 
@@ -57,13 +57,16 @@ const quotes = ['Come out to the coast, we’ll get together, have a few laughs�
 // randQuote()
 // console.log(randQuote())
 
-const $button = $('<button>').text('McClane-ables')
-$('body').append($button)
-
+const $button = $('<button>').text('McClane-ables').css({'height':'75px',
+                'width':'200px','background-color':'red','border-radius':'5%',
+                'border':'black','line-height':'1.5','cursor':'pointer','font-family':
+                'Rock Salt','font-size':'18px','color':'black'}).addClass('button')
+$('.container').append($button)
 
 $button.on('click', () => {
+  $('.middle').empty()
   const $quote = $('<p>' + randQuote() + '</p>').addClass('random-quote')
-  $('.quote-text').append($quote)
+  $('.middle').append($quote)
 })
 
 
