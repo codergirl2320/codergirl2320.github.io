@@ -80,6 +80,38 @@ h1 {
   justify-content: center;
 }
 
+#info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#title, #plot {
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#third {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+dt {
+  color: white;
+  margin: 5px;
+  padding: 0px;
+  text-align: center;
+}
+
+#run-time, #release-date, #rating {
+  color: white;
+  margin: 5px 20px 10px 0px;
+  padding: 0px;
+}
+
 .quote-background {
   height: 200px;
   width: 400px;
