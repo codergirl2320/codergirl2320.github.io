@@ -86,9 +86,17 @@ h1 {
   justify-content: center;
 }
 
-#title, #plot {
+#title {
   color: white;
   margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#plot {
+  width: 70%;
+  color: white;
+  margin: 0 auto;
   padding: 0;
   text-align: center;
 }
@@ -99,8 +107,8 @@ h1 {
   justify-content: space-around;
 }
 
-dt {
-  color: white;
+.invisible {
+  color: black;
   margin: 5px;
   padding: 0px;
   text-align: center;
