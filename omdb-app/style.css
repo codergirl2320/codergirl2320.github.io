@@ -188,3 +188,9 @@ h1 {
 dd {
   font-family: 'Roboto';
 }
+
+.buttons:hover {
+  cursor: pointer;
+  background: white;
+  color: red;
+}
