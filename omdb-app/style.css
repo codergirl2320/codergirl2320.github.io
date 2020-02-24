@@ -75,15 +75,15 @@ h1 {
   cursor: pointer;
 }
 
-.carousel-button:hover {
+/* .carousel-button:hover {
   cursor: pointer;
   background: white;
   color: red;
-}
+} */
 
 .quote-container {
   height: 300px;
-  width: 100%;
+  width: 95%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -101,6 +101,8 @@ h1 {
   margin: 0 auto;
   padding: 0;
   text-align: center;
+  font-family: 'Roboto';
+  font-size: 2vw;
 }
 
 #plot {
@@ -109,6 +111,8 @@ h1 {
   margin: 0 auto;
   padding: 0;
   text-align: center;
+  font-family: 'Roboto';
+  font-size: 1vw;
 }
 
 #third {
@@ -123,12 +127,15 @@ h1 {
   padding: 0px;
   text-align: center;
   font-family: 'Roboto';
+  font-size: 1vw;
 }
 
 #run-time, #release-date, #rating {
   color: white;
   margin: 5px 20px 10px 0px;
   padding: 0px;
+  font-family: 'Roboto';
+  font-size: 1vw;
 }
 
 .quote-background {
@@ -138,7 +145,7 @@ h1 {
 
 #one, #two {
   font-family: 'Alex Brush';
-  font-size: 1200px;
+  font-size: 100vw;
   color: rgba(255, 255, 255, 0.1);
   line-height: .7;
   text-align: center;
@@ -153,7 +160,7 @@ h1 {
 
 .random-quote {
   font-family: 'Rock Salt';
-  font-size: 28px;
+  font-size: 2vw;
   color: white;
   margin: auto;
   text-align: center;
@@ -182,7 +189,7 @@ h1 {
 
 #first {
   margin-top: 25px;
-  font-size: 24px;
+  font-size: 2vw;
 }
 
 dd {

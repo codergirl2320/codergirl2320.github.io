@@ -34,19 +34,19 @@ $(() => {
 
   })
 
-  const $dieHard = $('<button>').text('1').css({'margin':'10px','background-color':'red','border-radius':'50%','border':'red','width':'30px','height':'30px','font-family':'Rock Salt','color':'white'})
+  const $dieHard = $('<button>').text('1').css({'margin':'0 10px','background-color':'red','border-radius':'50%','border':'red','width':'30px','height':'30px','font-family':'Rock Salt','color':'white'})
   $('.info-buttons').append($dieHard)
 
-  const $dieHard2 = $('<button>').text('2').css({'margin':'10px','background-color':'red','border-radius':'50%','border':'red','width':'30px','height':'30px','font-family':'Rock Salt','color':'white'})
+  const $dieHard2 = $('<button>').text('2').css({'margin':'0 10px','background-color':'red','border-radius':'50%','border':'red','width':'30px','height':'30px','font-family':'Rock Salt','color':'white'})
   $('.info-buttons').append($dieHard2)
 
-  const $dieHard3 = $('<button>').text('3').css({'margin':'10px','background-color':'red','border-radius':'50%','border':'red','width':'30px','height':'30px','font-family':'Rock Salt','color':'white'})
+  const $dieHard3 = $('<button>').text('3').css({'margin':'0 10px','background-color':'red','border-radius':'50%','border':'red','width':'30px','height':'30px','font-family':'Rock Salt','color':'white'})
   $('.info-buttons').append($dieHard3)
 
-  const $dieHard4 = $('<button>').text('4').css({'margin':'10px','background-color':'red','border-radius':'50%','border':'red','width':'30px','height':'30px','font-family':'Rock Salt','color':'white'})
+  const $dieHard4 = $('<button>').text('4').css({'margin':'0 10px','background-color':'red','border-radius':'50%','border':'red','width':'30px','height':'30px','font-family':'Rock Salt','color':'white'})
   $('.info-buttons').append($dieHard4)
 
-  const $dieHard5 = $('<button>').text('5').css({'margin':'10px','background-color':'red','border-radius':'50%','border':'red','width':'30px','height':'30px','font-family':'Rock Salt','color':'white'})
+  const $dieHard5 = $('<button>').text('5').css({'margin':'0 10px','background-color':'red','border-radius':'50%','border':'red','width':'30px','height':'30px','font-family':'Rock Salt','color':'white'})
   $('.info-buttons').append($dieHard5)
 
   $dieHard.on('mouseover', () => {
