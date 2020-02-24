@@ -96,7 +96,7 @@ $dieHard.on('click', () => {
   $('.invisible').css('color', 'white')
 
   $.ajax({
-    url: 'http://www.omdbapi.com/?apikey=53aa2cd6&t=die%20hard',
+    url: 'https://www.omdbapi.com/?apikey=53aa2cd6&t=die%20hard',
   }).then(
     (data) => {
       $('#title').html(data.Title);
@@ -112,7 +112,7 @@ $dieHard2.on('click', () => {
   $('.invisible').css('color', 'white')
 
   $.ajax({
-    url: 'http://www.omdbapi.com/?apikey=53aa2cd6&t=die%20hard%202',
+    url: 'https://www.omdbapi.com/?apikey=53aa2cd6&t=die%20hard%202',
   }).then(
     (data) => {
       $('#title').html(data.Title);
@@ -128,7 +128,7 @@ $dieHard3.on('click', () => {
   $('.invisible').css('color', 'white')
 
   $.ajax({
-    url: 'http://www.omdbapi.com/?apikey=53aa2cd6&t=die%20hard%20with%20a%20vengeance',
+    url: 'https://www.omdbapi.com/?apikey=53aa2cd6&t=die%20hard%20with%20a%20vengeance',
   }).then(
     (data) => {
       $('#title').html(data.Title);
@@ -144,7 +144,7 @@ $dieHard4.on('click', () => {
   $('.invisible').css('color', 'white')
 
   $.ajax({
-    url: 'http://www.omdbapi.com/?apikey=53aa2cd6&t=live%20free%20or%20die%20hard',
+    url: 'https://www.omdbapi.com/?apikey=53aa2cd6&t=live%20free%20or%20die%20hard',
   }).then(
     (data) => {
       $('#title').html(data.Title);
@@ -160,7 +160,7 @@ $dieHard5.on('click', () => {
   $('.invisible').css('color', 'white')
 
   $.ajax({
-    url: 'http://www.omdbapi.com/?apikey=53aa2cd6&t=a%20good%20day%20to%20die%20hard',
+    url: 'https://www.omdbapi.com/?apikey=53aa2cd6&t=a%20good%20day%20to%20die%20hard',
   }).then(
     (data) => {
       $('#title').html(data.Title);
