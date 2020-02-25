@@ -2,7 +2,7 @@ body {
   background-color: black;
   margin: 0;
   padding: 0;
-  height: 1500px;
+  height: 1550px;
 }
 
 .header {
@@ -47,7 +47,7 @@ h1 {
 }
 
 .carousel-images {
-  width: 25%;
+  width: 30%;
   border: 3px solid white;
 }
 

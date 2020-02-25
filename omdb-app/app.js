@@ -34,22 +34,34 @@ $(() => {
 
   })
 
+  $('.previous').on('mouseover', () => {
+    $('.previous').css({'background-color':'white','color':'red'});
+  }).on('mouseout', () => {
+    $('.previous').css({'background-color':'red','color':'white'});
+  })
+
+  $('.next').on('mouseover', () => {
+    $('.next').css({'background-color':'white','color':'red'});
+  }).on('mouseout', () => {
+    $('.next').css({'background-color':'red','color':'white'});
+  })
+
   const $arrowsLeft = $('<div>').text('movie info > > >').addClass('arrows')
   $('.info-buttons').append($arrowsLeft)
 
-  const $dieHard = $('<button>').text('1').css({'margin':'0 10px','background-color':'red','border-radius':'50%','border':'red','width':'30px','height':'30px','font-family':'Rock Salt','color':'white','text-shadow':'1px 1px 5px black','box-shadow':'1px 1px 4px white'})
+  const $dieHard = $('<button>').text('1').css({'margin':'0 10px','background-color':'red','border-radius':'50%','border':'red','width':'35px','height':'35px','font-family':'Rock Salt','color':'white','text-shadow':'1px 1px 5px black','box-shadow':'1px 1px 4px white'})
   $('.info-buttons').append($dieHard)
 
-  const $dieHard2 = $('<button>').text('2').css({'margin':'0 10px','background-color':'red','border-radius':'50%','border':'red','width':'30px','height':'30px','font-family':'Rock Salt','color':'white','text-shadow':'1px 1px 5px black','box-shadow':'1px 1px 4px white'})
+  const $dieHard2 = $('<button>').text('2').css({'margin':'0 10px','background-color':'red','border-radius':'50%','border':'red','width':'35px','height':'35px','font-family':'Rock Salt','color':'white','text-shadow':'1px 1px 5px black','box-shadow':'1px 1px 4px white'})
   $('.info-buttons').append($dieHard2)
 
-  const $dieHard3 = $('<button>').text('3').css({'margin':'0 10px','background-color':'red','border-radius':'50%','border':'red','width':'30px','height':'30px','font-family':'Rock Salt','color':'white','text-shadow':'1px 1px 5px black','box-shadow':'1px 1px 4px white'})
+  const $dieHard3 = $('<button>').text('3').css({'margin':'0 10px','background-color':'red','border-radius':'50%','border':'red','width':'35px','height':'35px','font-family':'Rock Salt','color':'white','text-shadow':'1px 1px 5px black','box-shadow':'1px 1px 4px white'})
   $('.info-buttons').append($dieHard3)
 
-  const $dieHard4 = $('<button>').text('4').css({'margin':'0 10px','background-color':'red','border-radius':'50%','border':'red','width':'30px','height':'30px','font-family':'Rock Salt','color':'white','text-shadow':'1px 1px 5px black','box-shadow':'1px 1px 4px white'})
+  const $dieHard4 = $('<button>').text('4').css({'margin':'0 10px','background-color':'red','border-radius':'50%','border':'red','width':'35px','height':'35px','font-family':'Rock Salt','color':'white','text-shadow':'1px 1px 5px black','box-shadow':'1px 1px 4px white'})
   $('.info-buttons').append($dieHard4)
 
-  const $dieHard5 = $('<button>').text('5').css({'margin':'0 10px','background-color':'red','border-radius':'50%','border':'red','width':'30px','height':'30px','font-family':'Rock Salt','color':'white','text-shadow':'1px 1px 5px black','box-shadow':'1px 1px 4px white'})
+  const $dieHard5 = $('<button>').text('5').css({'margin':'0 10px','background-color':'red','border-radius':'50%','border':'red','width':'35px','height':'35px','font-family':'Rock Salt','color':'white','text-shadow':'1px 1px 5px black','box-shadow':'1px 1px 4px white'})
   $('.info-buttons').append($dieHard5)
 
   const $arrowsRight = $('<div>').text('< < < movie info').addClass('arrows')
@@ -59,12 +71,6 @@ $(() => {
     $arrowsLeft.css('color', 'red');
   }).on('mouseout', () => {
     $arrowsLeft.css('color', 'white');
-  })
-
-  $arrowsRight.on('mouseover', () => {
-    $arrowsRight.css('color', 'red');
-  }).on('mouseout', () => {
-    $arrowsRight.css('color', 'white');
   })
 
   $dieHard.on('mouseover', () => {
@@ -97,16 +103,10 @@ $(() => {
     $dieHard5.css('color', 'white');
   })
 
-  $('.previous').on('mouseover', () => {
-    $('.previous').css({'background-color':'white','color':'red'});
+  $arrowsRight.on('mouseover', () => {
+    $arrowsRight.css('color', 'red');
   }).on('mouseout', () => {
-    $('.previous').css({'background-color':'red','color':'white'});
-  })
-
-  $('.next').on('mouseover', () => {
-    $('.next').css({'background-color':'white','color':'red'});
-  }).on('mouseout', () => {
-    $('.next').css({'background-color':'red','color':'white'});
+    $arrowsRight.css('color', 'white');
   })
 
 $dieHard.on('click', () => {
@@ -196,10 +196,11 @@ const randNum = () => {
 const quotes = ['Come out to the coast, we’ll get together, have a few laughs…',
                 'Just a fly in the ointment, Hans...a monkey in the wrench.',
                 'Welcome to the party, Pal!',
-                'Yippie Ki Yay, M*th*rf*ck*r!',
+                'Yippie-ki-yay, M*th*rf*ck*r!',
                 'Nine million terrorists in the world and I gotta kill one with feet smaller than my sister...',
                 'No f*cking sh*t lady, does it sound like I\'m ordering a pizza?',
-                'Happy trails, Hans!']
+                'Happy trails, Hans!',
+                'Now I have a machine gun. Ho Ho Ho']
 
 
 const randQuote = () => {
@@ -209,7 +210,8 @@ const randQuote = () => {
 const $button = $('<button>').text('McClane-ables Quote Generator').css({'height':'200px',
                 'width':'200px','background-color':'red','border-radius':'50%',
                 'border':'1px solid red','line-height':'1.5','cursor':'pointer','font-family':
-                'Rock Salt','font-size':'18px','color':'white','text-shadow':'1px 1px 5px black','box-shadow':'2px 2px 8px white'}).addClass('button')
+                'Rock Salt','font-size':'18px','color':'white','text-shadow':'1px 1px 5px black',
+                'box-shadow':'2px 2px 8px white'}).addClass('button')
 $('.container').append($button)
 
 $button.on('mouseover', () => {
