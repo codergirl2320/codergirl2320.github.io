@@ -142,7 +142,7 @@ $dieHard.on('click', () => {
 })
 
 $dieHard2.on('click', () => {
-  $('.invisible').css('color', 'white')
+  $('.invisible').css({'color':'white','outline':'none'})
 
   $.ajax({
     url: 'https://www.omdbapi.com/?apikey=53aa2cd6&t=die%20hard%202',
