@@ -65,19 +65,19 @@ $(() => {
   const $arrowsLeft = $('<div>').text('movie info > > >').addClass('arrows')
   $('.info-buttons').append($arrowsLeft)
 
-  const $dieHard = $('<button>').text('1').css({'margin':'0 10px','background-color':'red','border-radius':'50%','border':'red','width':'35px','height':'35px','font-family':'Rock Salt','color':'white','text-shadow':'1px 1px 5px black','box-shadow':'1px 1px 4px white'})
+  const $dieHard = $('<button>').text('1').css({'margin':'0 10px','background-color':'red','border-radius':'50%','border':'red','width':'35px','height':'35px','font-family':'Rock Salt','color':'white','text-shadow':'1px 1px 5px black','box-shadow':'1px 1px 4px white','outline':'none'})
   $('.info-buttons').append($dieHard)
 
-  const $dieHard2 = $('<button>').text('2').css({'margin':'0 10px','background-color':'red','border-radius':'50%','border':'red','width':'35px','height':'35px','font-family':'Rock Salt','color':'white','text-shadow':'1px 1px 5px black','box-shadow':'1px 1px 4px white'})
+  const $dieHard2 = $('<button>').text('2').css({'margin':'0 10px','background-color':'red','border-radius':'50%','border':'red','width':'35px','height':'35px','font-family':'Rock Salt','color':'white','text-shadow':'1px 1px 5px black','box-shadow':'1px 1px 4px white','outline':'none'})
   $('.info-buttons').append($dieHard2)
 
-  const $dieHard3 = $('<button>').text('3').css({'margin':'0 10px','background-color':'red','border-radius':'50%','border':'red','width':'35px','height':'35px','font-family':'Rock Salt','color':'white','text-shadow':'1px 1px 5px black','box-shadow':'1px 1px 4px white'})
+  const $dieHard3 = $('<button>').text('3').css({'margin':'0 10px','background-color':'red','border-radius':'50%','border':'red','width':'35px','height':'35px','font-family':'Rock Salt','color':'white','text-shadow':'1px 1px 5px black','box-shadow':'1px 1px 4px white','outline':'none'})
   $('.info-buttons').append($dieHard3)
 
-  const $dieHard4 = $('<button>').text('4').css({'margin':'0 10px','background-color':'red','border-radius':'50%','border':'red','width':'35px','height':'35px','font-family':'Rock Salt','color':'white','text-shadow':'1px 1px 5px black','box-shadow':'1px 1px 4px white'})
+  const $dieHard4 = $('<button>').text('4').css({'margin':'0 10px','background-color':'red','border-radius':'50%','border':'red','width':'35px','height':'35px','font-family':'Rock Salt','color':'white','text-shadow':'1px 1px 5px black','box-shadow':'1px 1px 4px white','outline':'none'})
   $('.info-buttons').append($dieHard4)
 
-  const $dieHard5 = $('<button>').text('5').css({'margin':'0 10px','background-color':'red','border-radius':'50%','border':'red','width':'35px','height':'35px','font-family':'Rock Salt','color':'white','text-shadow':'1px 1px 5px black','box-shadow':'1px 1px 4px white'})
+  const $dieHard5 = $('<button>').text('5').css({'margin':'0 10px','background-color':'red','border-radius':'50%','border':'red','width':'35px','height':'35px','font-family':'Rock Salt','color':'white','text-shadow':'1px 1px 5px black','box-shadow':'1px 1px 4px white','outline':'none'})
   $('.info-buttons').append($dieHard5)
 
   const $arrowsRight = $('<div>').text('< < < movie info').addClass('arrows')
@@ -225,7 +225,7 @@ const randQuote = () => {
 
 const $button = $('<button>').text('McClane-ables Quote Generator').css({'height':'200px',
                 'width':'200px','background-color':'red','border-radius':'50%',
-                'border':'1px solid red','line-height':'1.5','cursor':'pointer','font-family':
+                'border':'1px solid red','line-height':'1.5','cursor':'pointer','outline':'none','font-family':
                 'Rock Salt','font-size':'18px','color':'white','text-shadow':'1px 1px 5px black',
                 'box-shadow':'2px 2px 8px white'}).addClass('button')
 $('.container').append($button)
