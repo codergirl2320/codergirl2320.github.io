@@ -34,20 +34,38 @@ $(() => {
 
   })
 
-  const $dieHard = $('<button>').text('1').css({'margin':'0 10px','background-color':'red','border-radius':'50%','border':'red','width':'30px','height':'30px','font-family':'Rock Salt','color':'white'})
+  const $arrowsLeft = $('<div>').text('movie info > > >').addClass('arrows')
+  $('.info-buttons').append($arrowsLeft)
+
+  const $dieHard = $('<button>').text('1').css({'margin':'0 10px','background-color':'red','border-radius':'50%','border':'red','width':'30px','height':'30px','font-family':'Rock Salt','color':'white','text-shadow':'1px 1px 5px black','box-shadow':'1px 1px 4px white'})
   $('.info-buttons').append($dieHard)
 
-  const $dieHard2 = $('<button>').text('2').css({'margin':'0 10px','background-color':'red','border-radius':'50%','border':'red','width':'30px','height':'30px','font-family':'Rock Salt','color':'white'})
+  const $dieHard2 = $('<button>').text('2').css({'margin':'0 10px','background-color':'red','border-radius':'50%','border':'red','width':'30px','height':'30px','font-family':'Rock Salt','color':'white','text-shadow':'1px 1px 5px black','box-shadow':'1px 1px 4px white'})
   $('.info-buttons').append($dieHard2)
 
-  const $dieHard3 = $('<button>').text('3').css({'margin':'0 10px','background-color':'red','border-radius':'50%','border':'red','width':'30px','height':'30px','font-family':'Rock Salt','color':'white'})
+  const $dieHard3 = $('<button>').text('3').css({'margin':'0 10px','background-color':'red','border-radius':'50%','border':'red','width':'30px','height':'30px','font-family':'Rock Salt','color':'white','text-shadow':'1px 1px 5px black','box-shadow':'1px 1px 4px white'})
   $('.info-buttons').append($dieHard3)
 
-  const $dieHard4 = $('<button>').text('4').css({'margin':'0 10px','background-color':'red','border-radius':'50%','border':'red','width':'30px','height':'30px','font-family':'Rock Salt','color':'white'})
+  const $dieHard4 = $('<button>').text('4').css({'margin':'0 10px','background-color':'red','border-radius':'50%','border':'red','width':'30px','height':'30px','font-family':'Rock Salt','color':'white','text-shadow':'1px 1px 5px black','box-shadow':'1px 1px 4px white'})
   $('.info-buttons').append($dieHard4)
 
-  const $dieHard5 = $('<button>').text('5').css({'margin':'0 10px','background-color':'red','border-radius':'50%','border':'red','width':'30px','height':'30px','font-family':'Rock Salt','color':'white'})
+  const $dieHard5 = $('<button>').text('5').css({'margin':'0 10px','background-color':'red','border-radius':'50%','border':'red','width':'30px','height':'30px','font-family':'Rock Salt','color':'white','text-shadow':'1px 1px 5px black','box-shadow':'1px 1px 4px white'})
   $('.info-buttons').append($dieHard5)
+
+  const $arrowsRight = $('<div>').text('< < < movie info').addClass('arrows')
+  $('.info-buttons').append($arrowsRight)
+
+  $arrowsLeft.on('mouseover', () => {
+    $arrowsLeft.css('color', 'red');
+  }).on('mouseout', () => {
+    $arrowsLeft.css('color', 'white');
+  })
+
+  $arrowsRight.on('mouseover', () => {
+    $arrowsRight.css('color', 'red');
+  }).on('mouseout', () => {
+    $arrowsRight.css('color', 'white');
+  })
 
   $dieHard.on('mouseover', () => {
     $dieHard.css('color', 'black');
@@ -90,7 +108,6 @@ $(() => {
   }).on('mouseout', () => {
     $('.next').css({'background-color':'red','color':'white'});
   })
-
 
 $dieHard.on('click', () => {
   $('.invisible').css('color', 'white')
@@ -189,10 +206,10 @@ const randQuote = () => {
   return quotes[randNum()]
 }
 
-const $button = $('<button>').text('McClane-ables').css({'height':'75px',
-                'width':'200px','background-color':'red','border-radius':'5%',
-                'border':'red','line-height':'1.5','cursor':'pointer','font-family':
-                'Rock Salt','font-size':'18px','color':'white'}).addClass('button')
+const $button = $('<button>').text('McClane-ables Quote Generator').css({'height':'200px',
+                'width':'200px','background-color':'red','border-radius':'50%',
+                'border':'1px solid red','line-height':'1.5','cursor':'pointer','font-family':
+                'Rock Salt','font-size':'18px','color':'white','text-shadow':'1px 1px 5px black','box-shadow':'2px 2px 8px white'}).addClass('button')
 $('.container').append($button)
 
 $button.on('mouseover', () => {
@@ -208,3 +225,7 @@ $button.on('click', () => {
 })
 
 })
+
+
+// $test = $('<div>').addClass('test')
+// $('body').append($test)
