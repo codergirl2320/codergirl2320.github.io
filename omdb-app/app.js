@@ -2,6 +2,22 @@
 
 $(() => {
 
+  const $modal = $('#modal');
+
+  const $closeBtn = $('.modal-button');
+
+  const closeModal = () => {
+    $modal.css('display', 'none');
+  }
+
+  $closeBtn.on('click', closeModal);
+
+  $closeBtn.on('mouseover', () => {
+    $('.modal-button').css({'color':'black'});
+  }).on('mouseout', () => {
+    $('.modal-button').css({'color':'red'});
+  })
+
   let currentImgIndex = 0;
 
   let highestIndex = $('.carousel-images').children().length - 1
