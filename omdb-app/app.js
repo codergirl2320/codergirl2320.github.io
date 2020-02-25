@@ -6,9 +6,15 @@ $(() => {
 
   const $closeBtn = $('.modal-button');
 
+  const openModal = () => {
+    $modal.css('display', 'block');
+  }
+
   const closeModal = () => {
     $modal.css('display', 'none');
   }
+
+  setTimeout(openModal, 1000)
 
   $closeBtn.on('click', closeModal);
 
@@ -62,7 +68,7 @@ $(() => {
     $('.next').css({'background-color':'red','color':'white'});
   })
 
-  const $arrowsLeft = $('<div>').text('movie info > > >').addClass('arrows')
+  const $arrowsLeft = $('<div>').text('movie info > > >').addClass('arrows').addClass('blinker')
   $('.info-buttons').append($arrowsLeft)
 
   const $dieHard = $('<button>').text('1').css({'margin':'0 10px','background-color':'red','border-radius':'50%','border':'red','width':'35px','height':'35px','font-family':'Rock Salt','color':'white','text-shadow':'1px 1px 5px black','box-shadow':'1px 1px 4px white','outline':'none'})
@@ -80,7 +86,7 @@ $(() => {
   const $dieHard5 = $('<button>').text('5').css({'margin':'0 10px','background-color':'red','border-radius':'50%','border':'red','width':'35px','height':'35px','font-family':'Rock Salt','color':'white','text-shadow':'1px 1px 5px black','box-shadow':'1px 1px 4px white','outline':'none'})
   $('.info-buttons').append($dieHard5)
 
-  const $arrowsRight = $('<div>').text('< < < movie info').addClass('arrows')
+  const $arrowsRight = $('<div>').text('< < < movie info').addClass('arrows').addClass('blinker')
   $('.info-buttons').append($arrowsRight)
 
   $arrowsLeft.on('mouseover', () => {
@@ -127,6 +133,8 @@ $(() => {
 
 $dieHard.on('click', () => {
   $('.invisible').css('color', 'white')
+  $arrowsLeft.css('animation-name', 'none')
+  $arrowsRight.css('animation-name', 'none')
 
   $.ajax({
     url: 'https://www.omdbapi.com/?apikey=53aa2cd6&t=die%20hard',
@@ -143,6 +151,8 @@ $dieHard.on('click', () => {
 
 $dieHard2.on('click', () => {
   $('.invisible').css('color','white')
+  $arrowsLeft.css('animation-name', 'none')
+  $arrowsRight.css('animation-name', 'none')
 
   $.ajax({
     url: 'https://www.omdbapi.com/?apikey=53aa2cd6&t=die%20hard%202',
@@ -159,6 +169,8 @@ $dieHard2.on('click', () => {
 
 $dieHard3.on('click', () => {
   $('.invisible').css('color', 'white')
+  $arrowsLeft.css('animation-name', 'none')
+  $arrowsRight.css('animation-name', 'none')
 
   $.ajax({
     url: 'https://www.omdbapi.com/?apikey=53aa2cd6&t=die%20hard%20with%20a%20vengeance',
@@ -175,6 +187,8 @@ $dieHard3.on('click', () => {
 
 $dieHard4.on('click', () => {
   $('.invisible').css('color', 'white')
+  $arrowsLeft.css('animation-name', 'none')
+  $arrowsRight.css('animation-name', 'none')
 
   $.ajax({
     url: 'https://www.omdbapi.com/?apikey=53aa2cd6&t=live%20free%20or%20die%20hard',
@@ -191,6 +205,8 @@ $dieHard4.on('click', () => {
 
 $dieHard5.on('click', () => {
   $('.invisible').css('color', 'white')
+  $arrowsLeft.css('animation-name', 'none')
+  $arrowsRight.css('animation-name', 'none')
 
   $.ajax({
     url: 'https://www.omdbapi.com/?apikey=53aa2cd6&t=a%20good%20day%20to%20die%20hard',
