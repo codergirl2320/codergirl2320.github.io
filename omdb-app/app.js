@@ -230,17 +230,17 @@ const $button = $('<button>').text('McClane-ables Quote Generator').css({'height
                 'box-shadow':'2px 2px 8px white'}).addClass('button')
 $('.container').append($button)
 
-$button.on('mouseover', () => {
-  $button.css('color', 'black');
-}).on('mouseout', () => {
-  $button.css('color', 'white');
-})
+  $button.on('mouseover', () => {
+    $button.css('color', 'black');
+  }).on('mouseout', () => {
+    $button.css('color', 'white');
+  })
 
-$button.on('click', () => {
-  $('.middle').empty()
-  const $quote = $('<p>' + randQuote() + '</p>').addClass('random-quote')
-  $('.middle').append($quote)
-})
+  $button.on('click', () => {
+    $('.middle').empty()
+    const $quote = $('<p>' + randQuote() + '</p>').addClass('random-quote')
+    $('.middle').append($quote)
+  })
 
 })
 
