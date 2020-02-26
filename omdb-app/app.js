@@ -1,4 +1,3 @@
-// console.log('js file is connected');
 
 $(() => {
 
@@ -265,9 +264,6 @@ $('.quote-button-container').append($button)
 
 })
 
-// $test = $('<div>').addClass('test')
-// $('body').append($test)
-
 const jMoves = ['rock','paper','scissors','machine gun'];
 const hMoves = ['rock','paper','scissors'];
 
@@ -311,7 +307,7 @@ let rockPSMG = (hansMove, johnMove) => {
     } else if (johnMove === 'scissors') {
       $('.outcome').text('Hans wins...rock beats scissors!')
     } else if (johnMove === 'machine gun') {
-        $('.outcome').text('John wins with his machine gun! Ho Ho Ho!')
+        $('.outcome').text('John wins with his machine gun! Ho Ho Ho!').addClass('blinker2')
     }
   } else if (hansMove === 'paper') {
     if (johnMove === 'rock') {
@@ -319,7 +315,7 @@ let rockPSMG = (hansMove, johnMove) => {
     } else if (johnMove === 'scissors') {
       $('.outcome').text('John wins...scissors beat paper!')
     } else if (johnMove === 'machine gun') {
-        $('.outcome').text('John wins with his machine gun! Ho Ho Ho!')
+        $('.outcome').text('John wins with his machine gun! Ho Ho Ho!').addClass('blinker2')
     }
   } else if (hansMove === 'scissors') {
     if (johnMove === 'rock') {
@@ -327,7 +323,7 @@ let rockPSMG = (hansMove, johnMove) => {
     } else if (johnMove === 'paper') {
       $('.outcome').text('Hans wins...scissors beat paper!')
     } else if (johnMove === 'machine gun') {
-        $('.outcome').text('John wins with his machine gun! Ho Ho Ho!')
+        $('.outcome').text('John wins with his machine gun! Ho Ho Ho!').addClass('blinker2')
     }
   }
 }
