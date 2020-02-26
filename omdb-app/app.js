@@ -269,10 +269,12 @@ const randomMove = () => {
   return moves[randomNumber];
 }
 
+$('#draw-button').on('click', () => {
+
 let johnMove = randomMove();
 let hansMove = randomMove();
 
-const rockPSMG = (hansMove, johnMove) => {
+let rockPSMG = (hansMove, johnMove) => {
   alert(`Hans chooses: ${hansMove}`);
   alert(`John chooses: ${johnMove}`);
 
@@ -311,8 +313,6 @@ const rockPSMG = (hansMove, johnMove) => {
         alert('Hans wins...machine gun beats scissors!')
     }
   }
-      }
-
-$('#draw-button').on('click', () => {
-          rockPSMG(hansMove, johnMove);
-    })
+}
+  rockPSMG(hansMove, johnMove);
+})

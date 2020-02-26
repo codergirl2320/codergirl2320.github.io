@@ -14,7 +14,7 @@ const rockPSMG = (hansMove, johnMove) => {
   alert(`John chooses: ${johnMove}`);
 
   if (hansMove === johnMove) {
-    alert('Hans and John tie!');
+    alert('Hans a tie!');
   } else if (hansMove === 'rock') {
     if (johnMove === 'paper') {
       alert('John wins...paper beats rock!')

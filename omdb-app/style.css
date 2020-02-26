@@ -129,7 +129,7 @@ h1 {
 }
 
 .carousel-images {
-  width: 30%;
+  width: 40%;
   border: 3px solid white;
 }
 
@@ -330,6 +330,7 @@ dd {
 .player-choices {
   background-color: white;
   border: 1px solid red;
+  /* border-radius: 50%; */
   height: 500px;
   width: 30%;
 }
