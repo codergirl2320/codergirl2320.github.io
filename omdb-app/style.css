@@ -2,7 +2,7 @@ body {
   background-color: black;
   margin: 0;
   padding: 0;
-  height: 2200px;
+  height: 2725px;
 }
 
 #modal {
@@ -160,10 +160,15 @@ h1 {
   box-shadow: 1px 1px 4px white;
 }
 
+#quote-section {
+  height: 200px;
+  width: 100%;
+}
+
 .quote-container {
   height: 300px;
   width: 95%;
-  margin: 10px;
+  margin: 0px 10px 0px 10px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -174,6 +179,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 50px;
 }
 
 #title {
@@ -183,7 +189,7 @@ h1 {
   padding: 0;
   text-align: center;
   font-family: 'Roboto';
-  font-size: 2vw;
+  font-size: 3vw;
 }
 
 #plot {
@@ -193,13 +199,14 @@ h1 {
   padding: 0;
   text-align: center;
   font-family: 'Roboto';
-  font-size: 1vw;
+  font-size: 2vw;
 }
 
 #third {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-bottom: 50px;
 }
 
 .invisible {
@@ -208,7 +215,7 @@ h1 {
   padding: 0px;
   text-align: center;
   font-family: 'Roboto';
-  font-size: 1vw;
+  font-size: 2vw;
 }
 
 #run-time, #release-date, #rating {
@@ -216,7 +223,7 @@ h1 {
   margin: 5px 20px 10px 0px;
   padding: 0px;
   font-family: 'Roboto';
-  font-size: 1vw;
+  font-size: 2vw;
 }
 
 .quote-background {
@@ -251,10 +258,6 @@ h1 {
   height: 300px;
   display: flex;
   justify-content: center;
-}
-
-.button {
-  cursor: pointer;
 }
 
 .button:hover {
@@ -309,13 +312,29 @@ dd {
 } */
 
 .game-title {
-  height: 50px;
+  height: 300px;
   width: 100%;
+}
+
+h4 {
   text-align: center;
   font-family: 'Rock Salt';
   font-size: 2vw;
   color: white;
-  margin: 50px 0;
+  margin-top: 75px;
+}
+
+h5 {
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 1.5vw;
+  color: white;
+}
+
+span {
+  font-family: 'Rock Salt';
+  font-size: 1.5vw;
+  color: red;
 }
 
 .game-container {
@@ -324,39 +343,52 @@ dd {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  border: 1px solid white;
 }
 
-.player-choices {
+.player-container {
   background-color: white;
-  border: 1px solid red;
-  /* border-radius: 50%; */
+  border: 5px solid red;
   height: 500px;
   width: 30%;
+
 }
 
-.game-outcome {
-  border: 1px solid white;
-  height: 500px;
-  width: 30%;
-  /* display: flex; */
-  flex: 1;
-}
-
-.draw-button {
-
+h3 {
+  text-align: center;
+  color: black;
+  text-align: center;
+  font-size: 1.5vw;
+  font-family: 'Rock Salt';
+  margin: 20px auto;
 }
 
 #john-pic {
   height: 300px;
-  margin-top: 175px;
-  margin-left: 25%;
-  flex: 2;
+  margin-top: 75px;
+  margin-left: 22%;
 }
 
 #hans-pic {
   height: 300px;
-  margin-top: 175px;
-  margin-left: 25%;
-  flex: 2;
+  margin-top: 75px;
+  margin-left: 22%;
+}
+
+.outcome-container {
+  height: 500px;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.outcome {
+  color: red;
+  text-align: center;
+  font-size: 2vw;
+  font-family: 'Rock Salt';
+}
+
+.throw-button {
+  align-self: center;
 }

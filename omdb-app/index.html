@@ -21,8 +21,9 @@
     <div class="container">
 
       <div class="header">
+        <a class="header-button" href="#info-section">Movie Info</a>
         <a class="header-button" href="#quote-section">McClane-ables Quote Generator</a>
-        <a class="header-button" href="#game-section">Rock, Paper, Scissors, Machine Gun</a>
+        <a class="header-button" href="#game-section">Rock, Paper, Scissors...Machine Gun</a>
       </div>
 
       <div class="title">
@@ -41,6 +42,7 @@
         </div>
         <div class="carousel-button next">></div>
       </div>
+      <div id="info-section"></div>
     <div id='info'>
       <dl id='first'>
           <dd id='title'></dd>
@@ -61,27 +63,33 @@
     <div class="info-buttons">
     </div>
 
-      <div class="quote-container" id="quote-section">
+      <div id="quote-section">
+        <h4>McClane-ables Quote Generator</h4>
+        <h5><span>John's</span> most quotable</br>one liners from the original Die Hard movie.</h5>
+      </div>
+      <div class="quote-container">
         <div class="quote-background" id="one">"</div>
         <div class="middle"></div>
         <div class="quote-background" id="two">"</div>
       </div>
-
       <div class="quote-button-container">
       </div>
-      <div class="game-title">Rock, Paper, Scissors...Machine Gun!</div>
-      <div class="game-container" id="game-section">
-        <div class="player-choices" id="john">
-          <p class="johns-throw"></p>
+
+      <div class="game-title" id="game-section">
+        <h4>Rock, Paper, Scissors...Machine Gun!</h4>
+        <h5>John and Hans both want the detonators...to decide, they've agreed to a game of</br>Rock, Paper, Scissors...<span>DIE HARD style!!</span></h5>
+      </div>
+      <div class="game-container">
+        <div class="player-container" id="john">
           <img id='john-pic'src='./images/john_mcclane2.jpg' alt='John McClane Funko'>
+          <h3 class="johns-throw"></h3>
         </div>
-        <div class="game-outcome">
-          <p></p>
-          <button id="draw-button">Rock, Paper, Scissors...THROW!</button>
+        <div class="outcome-container">
+          <h3 class="outcome"></h3>
         </div>
-        <div class="player-choices" id="hans">
-          <p class="hans-throw"></p>
+        <div class="player-container" id="hans">
           <img id='hans-pic'src='./images/hans_gruber.jpg' alt='Hans Gruber Funko'>
+          <h3 class="hans-throw"></h3>
         </div>
     </div>
   </div>

@@ -24,6 +24,12 @@ $(() => {
     $('.modal-button').css({'color':'red'});
   })
 
+  $('.header-button').on('mouseover', () => {
+    $(event.currentTarget).css('color', 'white');
+  }).on('mouseout', () => {
+    $(event.currentTarget).css('color', 'black');
+  })
+
   let currentImgIndex = 0;
 
   let highestIndex = $('.carousel-images').children().length - 1
@@ -239,10 +245,10 @@ const randQuote = () => {
   return quotes[randNum()]
 }
 
-const $button = $('<button>').text('McClane-ables Quote Generator').css({'height':'200px',
-                'width':'200px','background-color':'red','border-radius':'50%',
+const $button = $('<button>').text('QUOTE ME!').css({'height':'100px',
+                'width':'250px','background-color':'red','border-radius':'3%',
                 'border':'1px solid red','line-height':'1.5','cursor':'pointer','outline':'none','font-family':'Rock Salt','font-size':'18px','color':'white','text-shadow':'1px 1px 5px black',
-                'box-shadow':'2px 2px 8px white'}).addClass('button')
+                'box-shadow':'2px 2px 8px white'})
 $('.quote-button-container').append($button)
 
   $button.on('mouseover', () => {
@@ -262,55 +268,66 @@ $('.quote-button-container').append($button)
 // $test = $('<div>').addClass('test')
 // $('body').append($test)
 
-const moves = ['rock','paper','scissors','machine gun'];
+const jMoves = ['rock','paper','scissors','machine gun'];
+const hMoves = ['rock','paper','scissors'];
 
-const randomMove = () => {
-  const randomNumber = Math.floor(Math.random() * moves.length);
-  return moves[randomNumber];
+const jRandomMove = () => {
+  const randomNumber = Math.floor(Math.random() * jMoves.length);
+  return jMoves[randomNumber];
 }
 
-$('#draw-button').on('click', () => {
+const hRandomMove = () => {
+  const randomNumber = Math.floor(Math.random() * hMoves.length);
+  return hMoves[randomNumber];
+}
 
-let johnMove = randomMove();
-let hansMove = randomMove();
+const $throw = $('<button>').text('THROW!').css({'height':'100px',
+                'width':'250px','background-color':'red','border-radius':'3%',
+                'border':'1px solid red','line-height':'1.5','cursor':'pointer','outline':'none','font-family':'Rock Salt','font-size':'18px','color':'white','text-shadow':'1px 1px 5px black',
+                'box-shadow':'2px 2px 8px white'}).addClass('throw-button')
+$('.outcome-container').append($throw)
+
+
+$throw.on('mouseover', () => {
+  $throw.css('color', 'black');
+}).on('mouseout', () => {
+  $throw.css('color', 'white');
+})
+
+$throw.on('click', () => {
+
+let johnMove = jRandomMove();
+let hansMove = hRandomMove();
 
 let rockPSMG = (hansMove, johnMove) => {
-  alert(`Hans chooses: ${hansMove}`);
-  alert(`John chooses: ${johnMove}`);
+  $('.hans-throw').text(`Hans chooses: ${hansMove}`);
+  $('.johns-throw').text(`John chooses: ${johnMove}`);
 
   if (hansMove === johnMove) {
-    alert('Hans and John tie!');
+    $('.outcome').text('Hans and John tie!');
   } else if (hansMove === 'rock') {
     if (johnMove === 'paper') {
-      alert('John wins...paper beats rock!')
+      $('.outcome').text('John wins...paper beats rock!')
     } else if (johnMove === 'scissors') {
-      alert('Hans wins...rock beats scissors!')
+      $('.outcome').text('Hans wins...rock beats scissors!')
     } else if (johnMove === 'machine gun') {
-        alert('John wins with his machine gun! Ho Ho Ho!')
+        $('.outcome').text('John wins with his machine gun! Ho Ho Ho!')
     }
   } else if (hansMove === 'paper') {
     if (johnMove === 'rock') {
-      alert('Hans wins...paper beats rock!')
+      $('.outcome').text('Hans wins...paper beats rock!')
     } else if (johnMove === 'scissors') {
-      alert('John wins...scissors beat paper!')
+      $('.outcome').text('John wins...scissors beat paper!')
     } else if (johnMove === 'machine gun') {
-        alert('John wins with his machine gun! Ho Ho Ho!')
+        $('.outcome').text('John wins with his machine gun! Ho Ho Ho!')
     }
   } else if (hansMove === 'scissors') {
     if (johnMove === 'rock') {
-      alert('John wins...rock beats scissors!')
+      $('.outcome').text('John wins...rock beats scissors!')
     } else if (johnMove === 'paper') {
-      alert('Hans wins...scissors beat paper!')
+      $('.outcome').text('Hans wins...scissors beat paper!')
     } else if (johnMove === 'machine gun') {
-        alert('John wins with his machine gun! Ho Ho Ho!')
-    }
-  } else if (hansMove === 'machine gun') {
-    if (johnMove === 'rock') {
-      alert('Hans wins...machine gun beats rock!')
-    } else if (johnMove === 'paper') {
-      alert('Hans wins...machine gun beats paper!')
-    } else if (johnMove === 'scissors') {
-        alert('Hans wins...machine gun beats scissors!')
+        $('.outcome').text('John wins with his machine gun! Ho Ho Ho!')
     }
   }
 }
