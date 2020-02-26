@@ -241,10 +241,9 @@ const randQuote = () => {
 
 const $button = $('<button>').text('McClane-ables Quote Generator').css({'height':'200px',
                 'width':'200px','background-color':'red','border-radius':'50%',
-                'border':'1px solid red','line-height':'1.5','cursor':'pointer','outline':'none','font-family':
-                'Rock Salt','font-size':'18px','color':'white','text-shadow':'1px 1px 5px black',
+                'border':'1px solid red','line-height':'1.5','cursor':'pointer','outline':'none','font-family':'Rock Salt','font-size':'18px','color':'white','text-shadow':'1px 1px 5px black',
                 'box-shadow':'2px 2px 8px white'}).addClass('button')
-$('.container').append($button)
+$('.quote-button-container').append($button)
 
   $button.on('mouseover', () => {
     $button.css('color', 'black');
@@ -263,56 +262,57 @@ $('.container').append($button)
 // $test = $('<div>').addClass('test')
 // $('body').append($test)
 
-// const moves = ['rock','paper','scissors','machine gun'];
-//
-// const randomMove = () => {
-//   const randomNumber = Math.floor(Math.random() * moves.length);
-//   return moves[randomNumber];
-// }
-//
-// let johnMove = randomMove();
-// let hansMove = randomMove();
-//
-// const rockPSMG = (hansMove, johnMove) => {
-//   alert(`Hans chooses: ${hansMove}`);
-//   alert(`John chooses: ${johnMove}`);
-//
-//   if (hansMove === johnMove) {
-//     alert('It\'s a tie!');
-//   } else if (hansMove === 'rock') {
-//     if (johnMove === 'paper') {
-//       alert('John wins...paper beats rock!')
-//     } else if (johnMove === 'scissors') {
-//       alert('Hans wins...rock beats scissors!')
-//     } else if (johnMove === 'machine gun') {
-//         alert('John wins...machine gun beats rock!')
-//     }
-//   } else if (hansMove === 'paper') {
-//     if (johnMove === 'rock') {
-//       alert('Hans wins...paper beats rock!')
-//     } else if (johnMove === 'scissors') {
-//       alert('John wins...scissors beat paper!')
-//     } else if (johnMove === 'machine gun') {
-//         alert('John wins...machine gun beats paper!')
-//     }
-//   } else if (hansMove === 'scissors') {
-//     if (johnMove === 'rock') {
-//       alert('John wins...rock beats scissors!')
-//     } else if (johnMove === 'paper') {
-//       alert('Hans wins...scissors beat paper!')
-//     } else if (johnMove === 'machine gun') {
-//         alert('John wins...machine gun beats scissors!')
-//     }
-//   } else if (hansMove === 'machine gun') {
-//     if (johnMove === 'rock') {
-//       alert('Hans wins...machine gun beats rock!')
-//     } else if (johnMove === 'paper') {
-//       alert('Hans wins...machine gun beats paper!')
-//     } else if (johnMove === 'scissors') {
-//         alert('Hans wins...machine gun beats scissors!')
-//     }
-//   }
-//   }
-// }
-//
-// rockPSMG(hansMove, johnMove);
+const moves = ['rock','paper','scissors','machine gun'];
+
+const randomMove = () => {
+  const randomNumber = Math.floor(Math.random() * moves.length);
+  return moves[randomNumber];
+}
+
+let johnMove = randomMove();
+let hansMove = randomMove();
+
+const rockPSMG = (hansMove, johnMove) => {
+  alert(`Hans chooses: ${hansMove}`);
+  alert(`John chooses: ${johnMove}`);
+
+  if (hansMove === johnMove) {
+    alert('Hans and John tie!');
+  } else if (hansMove === 'rock') {
+    if (johnMove === 'paper') {
+      alert('John wins...paper beats rock!')
+    } else if (johnMove === 'scissors') {
+      alert('Hans wins...rock beats scissors!')
+    } else if (johnMove === 'machine gun') {
+        alert('John wins with his machine gun! Ho Ho Ho!')
+    }
+  } else if (hansMove === 'paper') {
+    if (johnMove === 'rock') {
+      alert('Hans wins...paper beats rock!')
+    } else if (johnMove === 'scissors') {
+      alert('John wins...scissors beat paper!')
+    } else if (johnMove === 'machine gun') {
+        alert('John wins with his machine gun! Ho Ho Ho!')
+    }
+  } else if (hansMove === 'scissors') {
+    if (johnMove === 'rock') {
+      alert('John wins...rock beats scissors!')
+    } else if (johnMove === 'paper') {
+      alert('Hans wins...scissors beat paper!')
+    } else if (johnMove === 'machine gun') {
+        alert('John wins with his machine gun! Ho Ho Ho!')
+    }
+  } else if (hansMove === 'machine gun') {
+    if (johnMove === 'rock') {
+      alert('Hans wins...machine gun beats rock!')
+    } else if (johnMove === 'paper') {
+      alert('Hans wins...machine gun beats paper!')
+    } else if (johnMove === 'scissors') {
+        alert('Hans wins...machine gun beats scissors!')
+    }
+  }
+      }
+
+$('#draw-button').on('click', () => {
+          rockPSMG(hansMove, johnMove);
+    })
