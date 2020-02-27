@@ -41,19 +41,6 @@ p {
   margin-bottom: 50px;
 }
 
-.blinker {
-  animation-name: blinker;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-
-@keyframes blinker {
-  0%{opacity: 1.0;}
-  50%{opacity: 0.0;}
-  100%{opacity: 1.0;}
-}
-
 .funko {
   width: 110px;
   margin: 0;
@@ -78,6 +65,12 @@ marquee {
   justify-content: center;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .header {
   width: 100%;
   height: 50px;
@@ -94,12 +87,6 @@ marquee {
   font-family: 'Rock Salt';
   font-size: 1.3vw;
   align-self: center;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .title {
@@ -162,26 +149,16 @@ h1 {
   box-shadow: 1px 1px 4px white;
 }
 
-#quote-section {
-  height: 250px;
-  width: 100%;
-}
-
-.quote-container {
-  height: 300px;
-  width: 95%;
-  margin: 0px 10px 0px 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  overflow: hidden;
-}
-
 #info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-top: 50px;
+}
+
+#first {
+  margin-top: 25px;
+  font-size: 2vw;
 }
 
 #title {
@@ -204,11 +181,24 @@ h1 {
   font-size: 2vw;
 }
 
+#first, #second, #third {
+  margin-top: 5px;
+  padding: 0;
+}
+
 #third {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin-bottom: 50px;
+}
+
+#run-time, #release-date, #rating {
+  color: white;
+  margin: 5px 20px 10px 0px;
+  padding: 0px;
+  font-family: 'Roboto';
+  font-size: 2vw;
 }
 
 .invisible {
@@ -220,12 +210,48 @@ h1 {
   font-size: 2vw;
 }
 
-#run-time, #release-date, #rating {
-  color: white;
-  margin: 5px 20px 10px 0px;
-  padding: 0px;
+dd {
   font-family: 'Roboto';
-  font-size: 2vw;
+}
+
+.info-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.arrows {
+  font-family: 'Rock Salt';
+  font-size: 14px;
+  color: white;
+  margin: 0 15px;
+}
+
+.blinker {
+  animation-name: blinker;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blinker {
+  0%{opacity: 1.0;}
+  50%{opacity: 0.0;}
+  100%{opacity: 1.0;}
+}
+
+#quote-section {
+  height: 250px;
+  width: 100%;
+}
+
+.quote-container {
+  height: 300px;
+  width: 95%;
+  margin: 0px 10px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .quote-background {
@@ -248,56 +274,18 @@ h1 {
   line-height: .5;
 }
 
-.random-quote {
-  font-family: 'Rock Salt';
-  font-size: 2.5vw;
-  color: white;
-  margin: auto;
-  text-align: center;
-}
-
 .middle {
   height: 300px;
   display: flex;
   justify-content: center;
 }
 
-.button:hover {
-  background: white;
-  color: red;
-  cursor: pointer;
-}
-
-#first, #second, #third {
-  margin-top: 5px;
-  padding: 0;
-}
-
-#first {
-  margin-top: 25px;
-  font-size: 2vw;
-}
-
-dd {
-  font-family: 'Roboto';
-}
-
-.buttons:hover {
-  cursor: pointer;
-  background: white;
-  color: red;
-}
-
-.arrows {
+.random-quote {
   font-family: 'Rock Salt';
-  font-size: 14px;
+  font-size: 2.5vw;
   color: white;
-  margin: 0 15px;
-}
-
-.info-buttons {
-  display: flex;
-  flex-direction: row;
+  margin: auto;
+  text-align: center;
 }
 
 .game-title {
@@ -341,7 +329,6 @@ span {
   /* border: 5px solid red; */
   height: 500px;
   width: 30%;
-
 }
 
 h3 {
@@ -398,6 +385,7 @@ h3 {
 }
 
 
+
 @media (min-width: 1400px) {
 
   body {
@@ -440,4 +428,5 @@ h3 {
     height: 350px;
     width: 100%;
   }
+
 }
