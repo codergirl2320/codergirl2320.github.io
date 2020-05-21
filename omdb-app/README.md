@@ -9,3 +9,6 @@ To access my app, please click the following link: [Tania Dodson's omdb app](htt
 - CSS
 - JavaScript
 - jQuery
+
+### Description: 
+A fun, playful app for die hard fans of the Die Hard movie series.
