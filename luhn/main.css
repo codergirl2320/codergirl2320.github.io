@@ -1,4 +1,6 @@
 body {
+  display: flex;
+  flex-direction: column;
   background-color: #8C837B;
   padding: 100px;
   text-align: center;
