@@ -5,14 +5,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
     <link rel="stylesheet" href="style.css">
-
     <title></title>
   </head>
   <body>
     <h1>The Luhn Algorithm</h1>
     <h5>Credit card numbers can be validated with a process called the Luhn algorithm.</h5><br/>
       <h5>The Luhn algorithm  works like this:</h5>
-      <p>1. Starting with the next to last digit and continuing with every other digit<br/>going back to the beginning of the card number, double the digit.<br/>
+      <p class="steps">1. Starting with the next to last digit and continuing with every other digit<br/>going back to the beginning of the card number, double the digit.<br/>
       2. Sum all digits in the altered number.<br/>
       3. If that total is a multiple of 10, the number is valid.<br/><br/>
       For example, given the card number 4408 0412 3456 7893:<br/><br/>
@@ -25,6 +24,6 @@
       <input class="input" type="text" name="num"></input><br/>
       <button type="submit">Check</button>
     </form>
-
+    <a href="code.js">Click here to see my Luhn Algorithm code solution</a>
   </body>
 </html>
