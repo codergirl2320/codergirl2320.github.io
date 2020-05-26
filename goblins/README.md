@@ -2,7 +2,7 @@
 
 ## 101 Goblins
 
-To access my app, please click the following link: [Tania Dodson's 101 Goblins app](https://codergirl2320.github.io/goblins/)
+To access my app, please click the following link: [101 Goblins](https://codergirl2320.github.io/goblins/)
 
 ### Technologies used:
 - HTML
