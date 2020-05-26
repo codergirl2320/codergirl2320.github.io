@@ -1,0 +1,23 @@
+body {
+  padding: 30px 50px;
+  background-color: #D9D0C7;
+  }
+
+button {
+  background-color: #8C837B;
+  border: 1px solid #F2F2F2;
+  color: #F2F2F2;
+  margin: 5px auto;
+}
+
+h6 {
+  margin: 5px auto;
+}
+
+p {
+  margin: 5px auto;
+}
+
+.link {
+  margin-top: 10px;
+}

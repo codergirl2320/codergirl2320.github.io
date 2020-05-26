@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" sizes="16x16" href="./images/goblin-favicon.png">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" charset="utf-8" defer></script>
+    <script src="script.js" charset="utf-8" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="goblin">
+      <img src="./images/goblin.png" alt="">
+    </div>
+    <h1>CODE CHALLENGE: 100 Goblins</h1>
+    <h5>There are 100 Goblins suffering from acid reflux. You are a sadistic Goblin doctor with the cure...but you want to torture the Goblins with a little game...</h5>
+    <div class="step-one">
+      <h6>STEP ONE: Provided that "uncured Goblins" = FALSE and "cured Goblins" = TRUE...create an array of 100 uncured Goblins.</h6>
+    </div>
+    <div class="step-one-button">
+    </div>
+    <div class="step-two">
+      <h6>STEP TWO: You line up all the Goblins and give each of them the cure in turn, all 100 Goblins.</h6>
+    </div>
+    <div class="step-two-button">
+    </div>
+    <div class="step-three">
+      <h6>STEP THREE: Then you start from the beginning of the line and go over them a second time, removing the cure for every second Goblin, starting with the second Goblin. Then you do it a third time for every third Goblin, starting at the third Goblin: if the Goblin you now administer was previously cured, they are now uncured, and if the Goblin was uncured, they are now cured. You do it a fourth time, and go to every fourth Goblin starting with the fourth. The fifth time, you go to every fifth Goblin starting with the fifth...after you have gone down the line of Goblins 100 times, which Goblins are cured at the end?</h6>
+    </div>
+    <div class="step-three-button">
+    </div>
+    <div class="step-four">
+      <h6>STEP FOUR: Once you have your Goblins array populated with the final TRUE and FALSE values after having gone through the entire process of curing and uncuring, translate your final array to another array of numerical values of the cured Goblins only. If the first Goblin is cured, the first number in the array will be 1 (not zero). If the 100th Goblin is cured, the last number in the array will be 100. The expected output (solution) will be a list of all the perfect squares up to and including 100.<br/>=> [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]</h6>
+    </div>
+    <div class="step-four-button">
+    </div>
+    <div class="link">
+      <a href="code.js">Click here to see my original 100 Goblins code solution written in JavaScript</a>
+    </div>
+  </body>
+</html>
