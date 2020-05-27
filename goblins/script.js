@@ -9,7 +9,7 @@ $(() => {
     for(let i=1; i<=100; i++){
       goblinArray.push(false)
     }
-    return(goblinArray)
+    return(goblinArray.join(', '))
   }
 
   const $createArrayBtn = $('<button>').text('Execute Step One')
@@ -24,7 +24,7 @@ $(() => {
     goblinArray.forEach((item, i) => {
       goblinArray[i] = !goblinArray[i]
     })
-    return(goblinArray)
+    return(goblinArray.join(', '))
   }
 
   const $iterOneBtn = $('<button>').text('Execute Step Two')
@@ -44,7 +44,7 @@ $(() => {
         }
       }
     }
-    return(goblinArray)
+    return(goblinArray.join(', '))
   }
 
   const $iterTwoBtn = $('<button>').text('Execute Step Three')
